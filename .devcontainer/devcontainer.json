@@ -1,0 +1,10 @@
+{
+    "build": { "dockerfile": "Dockerfile" },
+    "forwardPorts": [8080],
+	"portsAttributes": {
+		"8080": {
+			"label": "Streamlit App",
+			"onAutoForward": "openBrowser"
+		}
+	}
+}
