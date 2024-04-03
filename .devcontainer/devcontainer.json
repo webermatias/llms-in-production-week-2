@@ -1,5 +1,19 @@
 {
-    "build": { "dockerfile": "Dockerfile" },
+    "name": "Python 3",
+    "image": "mcr.microsoft.com/devcontainers/python:3.10",
+	
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	//"features": {}
+	// Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {"terminal.integrated.shell.linux": "/bin/bash"},
+			"extensions": [
+				"ms-toolsai.jupyter"
+			]
+		}
+	},
     "forwardPorts": [8080],
 	"portsAttributes": {
 		"8080": {
